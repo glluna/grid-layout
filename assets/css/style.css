@@ -1,0 +1,39 @@
+body {
+    height: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 
+        [inicio] 1fr
+        [meio-1] 1fr 
+        [meio-2] 1fr [fim];
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.container-1 {
+    grid-row: 1 / span 2;
+}
+
+.container-3 {
+     grid-row: 1 / span 2;
+    
+}
+
+.container-4 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+.container-5 {
+    grid-area: 2 / meio-1 / span 2 / meio-2;
+
+}
+
+.container-6 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
