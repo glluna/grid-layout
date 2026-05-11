@@ -37,3 +37,19 @@ img {
     grid-row-start: 3;
     grid-column-start: 1;
 }
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+   .container-1, .container-3, .container-4,
+   .container-5, .container-6 {
+    grid-area: auto;
+    grid-row: auto;
+    grid-column: auto;
+   }
+}
+
